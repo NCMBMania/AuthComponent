@@ -1,0 +1,88 @@
+.auth-modal .form-control {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  overflow: visible;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.auth-modal .form-muted {
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 80%;
+  font-weight: 400;
+  display: block;
+  margin-top: .25rem;
+  color: #6c757d!important;
+}
+
+
+.auth-modal .form-group {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.auth-modal .hide {
+  display: none;
+}
+
+.auth-modal .alert {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  margin-top: 1rem;
+}
+
+.auth-modal .alert.danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.auth-modal .alert.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.auth-modal .forget-password, .auth-modal .back-to-login, .auth-modal .email-register {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  color: #55f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change-auth {
+  font-size: 1rem;
+  text-align: left;
+  color: #555;
+  text-decoration: underline;
+  cursor: pointer;
+}
