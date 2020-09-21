@@ -1,0 +1,31 @@
+import { UI, AuthOptions, UserForm } from './interface';
+import AuthComponent from './auth_component';
+import 'tingle.js/dist/tingle.min.css';
+import './form.css';
+declare class UIHTML implements UI {
+    _options: AuthOptions;
+    _auth: AuthComponent;
+    _className: string;
+    modal: any;
+    _register: boolean;
+    constructor(auth: AuthComponent, options: AuthOptions);
+    open(): void;
+    close(): void;
+    beforeClose(): boolean;
+    showError(message: string): void;
+    showMessage(dom: HTMLDivElement, message: string): void;
+    showSuccess(message: string): void;
+    signIn(): void;
+    getParams(): UserForm;
+    register(): void;
+    passwordReminder(): void;
+    openModal(): void;
+    changeSignUpForm(): void;
+    changeAuth(): void;
+    changeEmailRegisterForm(): void;
+    changeEmailForm(): void;
+    closeModal(): void;
+    html(): string;
+    emailHtml(): string;
+}
+export default UIHTML;

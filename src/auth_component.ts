@@ -1,4 +1,4 @@
-import { NCMB, NCMBQuery, NCMBAcl, NCMBUser } from 'ncmb_ts';
+import { NCMB, NCMBQuery, NCMBAcl, NCMBObject, NCMBUser } from 'ncmb_ts';
 import { AuthType, AuthOptions, UserForm } from './interface';
 import UIHTML from './ui_html';
 import UIOns from './ui_ons';
@@ -26,10 +26,12 @@ export default class AuthComponent {
     }
   }
 
-  openModal(success: Function, error: Function): void {
-    this.success = success;
-    this.error = error;
-    this.ui.openModal();
+  openModal(): Promise<void> {
+    return new Promise((res, rej) => {
+      this.ui.openModal();
+      this.success = res;
+      this.error = rej;
+    });
   }
 
   closeModal(): void {
@@ -112,4 +114,4 @@ export default class AuthComponent {
   }
 }
 
-export { NCMB, AuthOptions, AuthType, NCMBUser };
+export { NCMB, AuthOptions, AuthType, NCMBQuery, NCMBAcl, NCMBObject, NCMBUser };

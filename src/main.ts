@@ -1,4 +1,4 @@
-import AuthComponent, {NCMBUser, AuthOptions, AuthType} from './auth_component';
+import AuthComponent, {NCMBUser, AuthOptions, AuthType, NCMB, NCMBQuery, NCMBAcl, NCMBObject } from './auth_component';
 
 declare global {  
   interface Window {  
@@ -6,12 +6,20 @@ declare global {
     NCMBUser: any;
     AuthType: any;
     AuthOptions: any;
+    NCMBObject: any;
+    NCMBAcl: any;
+    NCMBQuery: any;
+    NCMB: any;
   }  
 }  
 
 window.AuthComponent = AuthComponent;
 window.NCMBUser = NCMBUser;
 window.AuthType = AuthType;
+window.NCMB = NCMB;
+window.NCMBQuery = NCMBQuery;
+window.NCMBObject = NCMBObject;
+window.NCMBAcl = NCMBAcl;
 
 /*
 
